@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Actions</title>
+  </head>
+  <body>
+    <div class="container">
+      <img class="logo" src="./images/logo.png" />
+      <h1 id="welcome">Welcome to Groupado Website</h1>
+      <p>This is a website that we will use to learn the basic automation</p>
+      <form class="form">
+        <input
+          class="input"
+          name="firstName"
+          type="text"
+          placeholder="First Name"
+        />
+        <input
+          class="input"
+          name="lastName"
+          type="text"
+          placeholder="Last Name"
+        />
+        <select id="level" name="level" level>
+          <option value="junior">Select your level</option>
+          <option value="junior">Junior</option>
+          <option value="senior">Senior</option>
+          <option value="manager">Manager</option>
+        </select>
+        <p class="checkbox-header">Select what do you want to learn</p>
+        <div class="checkbox-container">
+          <div class="checkbox-item">
+            <input type="radio" id="web" name="category" value="web" />
+            <label for="web"> Web</label><br />
+          </div>
+          <div class="checkbox-item">
+            <input type="radio" id="mobile" name="category" value="mobile" />
+            <label for="mobile"> mobile</label><br />
+          </div>
+        </div>
+
+        <button type="submit" class="button actions-button" id="actions-button">
+          Click me
+        </button>
+      </form>
+    </div>
+    <script src="actions.js"></script>
+  </body>
+</html>
